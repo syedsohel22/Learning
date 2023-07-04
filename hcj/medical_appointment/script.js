@@ -13,6 +13,10 @@ function loadContent(url) {
     });
 }
 
+
+
+
+
 // Function to toggle between login and signup forms
 function toggleForms() {
   const loginForm = document.getElementById("login-form");
