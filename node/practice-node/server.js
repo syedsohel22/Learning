@@ -1,10 +1,10 @@
 const express = require("express");
-
-const mongoose = require("mongoose");
 const app = express();
 require("dotenv").config();
-const port = process.env.port || 5000;
-mongoose.connect(process.env.altaspath);
+const port = process.env.PORT || 5000;
+
+app.use(express.json());
+
 app.listen(port, () => {
-  console.log("server listening on port", port);
+  console.log("listening on port " + port);
 });
