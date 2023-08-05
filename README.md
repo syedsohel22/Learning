@@ -1,2 +1,2 @@
-# automatic-journey
-this repo for practicing the MERN stack
+# Learning 
+this repo is for practising coding..!
