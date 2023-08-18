@@ -4,7 +4,9 @@ const Navbar = () => {
   return (
     <nav id="nav-menu" className="bg-gray-900 text-white py-4">
       <div className="container mx-auto flex justify-between items-center">
+        {/* logo */}
         <div className="text-2xl font-semibold">Sohel Syed</div>
+        {/* Second part of navbar */}
         <ul className="flex space-x-6">
           <li className="nav-link home">
             <a href="#home">Home</a>

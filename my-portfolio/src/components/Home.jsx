@@ -4,11 +4,13 @@ const Home = () => {
   return (
     <section id="home" className="bg-gray-100 py-16">
       <div className="container mx-auto text-center">
+        {/* profile picture */}
         <img
           src="https://avatars.githubusercontent.com/u/83800834?v=4"
           alt="Sohel Syed"
           className="home-img mx-auto rounded-full w-80 h-80 mb-6"
         />
+        {/* Title or users Name */}
         <h1 id="user-detail-name" className="text-4xl font-semibold mb-2">
           Sohel Syed
         </h1>
