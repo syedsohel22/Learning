@@ -89,8 +89,6 @@ const ProjectCard = ({
           detailsSide === "left" ? "order-1" : "order-2"
         }`}
       >
-
-      
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
         <p className="text-gray-600 mb-2">{description}</p>
         <p className="font-bold mb-3">Tech Stack: {techStack.join(" • ")}</p>
@@ -103,7 +101,6 @@ const ProjectCard = ({
           >
             <FaGithub />
           </a>
-
 
           <a
             href={deployedLink}
