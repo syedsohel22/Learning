@@ -48,7 +48,7 @@ const projectData = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="py-10 bg-gray-100">
+    <section id="projects" className="py-10 bg-gray-100">
       <div className="container mx-auto" style={{ width: "80%" }}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-90 mx-auto">
           {projectData.map((project, index) => (
@@ -73,7 +73,7 @@ const ProjectCard = ({
 
   return (
     <div
-      className={`flex flex-col md:flex-row items-center shadow-md p-6 bg-white ${
+      className={`project-card flex flex-col md:flex-row items-center shadow-md p-6 bg-white ${
         imageSide === "left" ? "md:flex-row" : "md:flex-row-reverse"
       }`}
     >
@@ -89,15 +89,17 @@ const ProjectCard = ({
           detailsSide === "left" ? "order-1" : "order-2"
         }`}
       >
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600 mb-2">{description}</p>
-        <p className="font-bold mb-3">Tech Stack: {techStack.join(" • ")}</p>
+        <h3 className="project-title text-xl font-semibold mb-2">{title}</h3>
+        <p className="project-description text-gray-600 mb-2">{description}</p>
+        <p className="project-tech-stack font-bold mb-3">
+          Tech Stack: {techStack.join(" | ")}
+        </p>
         <div className="flex">
           <a
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="mr-3 text-lg"
+            className="project-github-link mr-3 text-lg"
           >
             <FaGithub />
           </a>
@@ -106,7 +108,7 @@ const ProjectCard = ({
             href={deployedLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-lg"
+            className="project-deployed-link text-lg"
           >
             <FaExternalLinkAlt />
           </a>

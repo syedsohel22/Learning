@@ -11,6 +11,7 @@ const Contact = () => {
           <a
             href="https://github.com/yourusername"
             className="flex items-center text-blue-500 hover:underline"
+            id="contact-github"
           >
             <FaGithub className="mr-2" />
             GitHub
@@ -18,15 +19,16 @@ const Contact = () => {
           <a
             href="https://linkedin.com/in/yourusername"
             className="flex items-center text-blue-500 hover:underline"
+            id="contact-linkedin"
           >
             <FaLinkedin className="mr-2" />
             LinkedIn
           </a>
-          <p className="flex items-center text-gray-600">
+          <p className="flex items-center text-gray-600" id="contact-phone">
             <FaPhone className="mr-2" />
             Phone: +91 9420278216
           </p>
-          <p className="flex items-center text-gray-600">
+          <p className="flex items-center text-gray-600" id="contact-email">
             <FaEnvelope className="mr-2" />
             Email: mr.sohelsyed.com
           </p>

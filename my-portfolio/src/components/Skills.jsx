@@ -59,7 +59,7 @@ const Skills = () => {
 
 const SkillCard = ({ src, alt, name }) => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="skills-card flex flex-col items-center">
       <div className="border border-black rounded-md p-3 text-center min-w-[120px] transition-transform hover:scale-105">
         <img src={src} alt={alt} className="box-content mx-auto w-16 h-16" />
         <p className="mt-2">{name}</p>
