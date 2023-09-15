@@ -1,7 +1,9 @@
-import React from "react";
-
 const Skills = () => {
-  return <div>Skills</div>;
+  return (
+    <div style={{ height: "100vh", background: "#89CFF0" }} id="skills">
+      Skills
+    </div>
+  );
 };
 
 export default Skills;

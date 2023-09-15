@@ -1,7 +1,9 @@
-import React from "react";
-
 const GithubStat = () => {
-  return <div>GithubStat</div>;
+  return (
+    <div style={{ height: "100vh", background: "#40E0D0" }} id="githubStat">
+      GithubStat
+    </div>
+  );
 };
 
 export default GithubStat;

@@ -1,7 +1,9 @@
-import React from "react";
-
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div style={{ height: "100vh", background: "#00308F" }} id="home">
+      Home
+    </div>
+  );
 };
 
 export default Home;
