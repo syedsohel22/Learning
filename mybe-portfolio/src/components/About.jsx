@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div style={{ height: "100vh", background: "#81D8D0" }} id="about">
+    <div style={{ height: "90vh", background: "#81D8D0" }} id="about">
       About
     </div>
   );
