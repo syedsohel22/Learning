@@ -5,7 +5,7 @@ import cookieParser from "cookie-parser";
 import compression from "compression";
 import cors from "cors";
 import mongoose from "mongoose";
-
+import "dotenv/config";
 const app = express();
 
 app.use(
@@ -26,7 +26,7 @@ server.listen(8080, () => {
 
 //
 
-const MONGO_URL = ``;
+const MONGO_URL = process.env.MONGO_URL;
 
 mongoose.Promise = Promise;
 
