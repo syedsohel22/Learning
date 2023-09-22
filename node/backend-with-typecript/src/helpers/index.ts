@@ -1,6 +1,5 @@
 import crypto from "crypto";
 
-
 const SECRET = "SOHEL-REST-API";
 export const random = () => crypto.randomBytes(128).toString("base64");
 
