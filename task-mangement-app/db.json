@@ -1,19 +1,20 @@
 {
-  "posts": [
+  "tasks": [
     {
       "id": 1,
       "title": "json-server",
-      "author": "typicode"
+      "author": "user-1",
+      "assignedTo": "Sohel Syed",
+      "createdAt": ""
     }
   ],
-  "comments": [
+  "users": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "firstName": "Sohel",
+      "lastName": "Syed",
+      "email": "user@example.com",
+      "password": "12345"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
