@@ -25,4 +25,6 @@ export class BooksComponent {
   author4: String = 'Authar -4 ';
   src4: String =
     'https://5.imimg.com/data5/WZ/NH/HL/SELLER-99655515/clean-code-a-handbook-of-agile-software-craftsmanship-book.jpg';
+
+  isShowing: boolean = false;
 }
