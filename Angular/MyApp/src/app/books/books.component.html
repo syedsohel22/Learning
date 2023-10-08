@@ -1,5 +1,5 @@
 <h2>Programmning books list!</h2>
-<button [disabled]="isShowing">Show Books</button>
+<button (click)="handleClick()" [disabled]="isShowing">Show Books</button>
 <ul>
   <li>
     <img src="{{ src }}" alt="{{ name }}" width="100" />

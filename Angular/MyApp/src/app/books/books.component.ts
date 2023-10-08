@@ -27,4 +27,8 @@ export class BooksComponent {
     'https://5.imimg.com/data5/WZ/NH/HL/SELLER-99655515/clean-code-a-handbook-of-agile-software-craftsmanship-book.jpg';
 
   isShowing: boolean = false;
+
+  handleClick() {
+    this.isShowing = true;
+  }
 }
