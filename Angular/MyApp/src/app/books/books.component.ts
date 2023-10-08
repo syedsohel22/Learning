@@ -31,4 +31,5 @@ export class BooksComponent {
   handleClick() {
     this.isShowing = true;
   }
+  myName: string = '';
 }

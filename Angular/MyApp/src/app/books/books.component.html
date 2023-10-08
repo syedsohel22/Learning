@@ -1,5 +1,8 @@
 <h2>Programmning books list!</h2>
 <button (click)="handleClick()" [disabled]="isShowing">Show Books</button>
+
+<input type="text" [(ngModel)]="myName" />
+<p>{{ myName }}</p>
 <ul>
   <li>
     <img src="{{ src }}" alt="{{ name }}" width="100" />
@@ -11,7 +14,7 @@
     {{ name2 }} by {{ author2 }}
   </li>
 
-  <li>
+  <!-- <li>
     <img src="{{ src3 }}" alt="{{ name3 }}" width="100" />
     {{ name3 }} by {{ author3 }}
   </li>
@@ -19,5 +22,5 @@
   <li>
     <img src="{{ src4 }}" alt="{{ name4 }}" width="100" />
     {{ name4 }} by {{ author4 }}
-  </li>
+  </li> -->
 </ul>
