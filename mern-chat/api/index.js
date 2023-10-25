@@ -5,7 +5,14 @@ const port = 4000;
 const jwt = require("jsonwebtoken");
 const mongoose = require("mongoose");
 const cors = require("cors");
-mongoose.connect(process.env.MONGO_URL);
+mongoose
+  .connect(process.env.MONGO_URL)
+  .then((res) => {
+    console.log(`connected to DB`);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 const jwtSecret = process.env.JWT_SECRET;
 const { userModel } = require("./models/User.Models");
 /******************************************************************************************************************************************** */
@@ -15,7 +22,7 @@ app.use(
     origin: process.env.CLIENT_URL,
   })
 );
-
+console.log(process.env.CLIENT_URL);
 app.use(express.json());
 app.get("/", (req, res) => {
   res.json({ message: "Hello!" });
@@ -34,7 +41,9 @@ app.post("/register", async (req, res) => {
         .json({ message: "your created okay" });
     });
   } catch (error) {
-    res.json({ error: error });
+    if (error) {
+      res.status(500).json({ error: error });
+    }
   }
 });
 
