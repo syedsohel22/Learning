@@ -1,39 +1,39 @@
-// import { useEffect, useState } from "react";
-// import axios from "axios";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  //const [data, setData] = useState([]);
-  // useEffect(() => {
-  //   axios
-  //     .get("http://localhost:8081/users")
-  //     .then((res) => setData(res.data))
-  //     .catch((err) => console.log(err));
-  // }, []);
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://localhost:8081/users")
+      .then((res) => setData(res.data))
+      .catch((err) => console.log(err));
+  }, []);
 
-  const data = [
-    {
-      id: 1,
-      Name: "Sohel",
-      Email: "sohel@gmail.com",
-    },
-    {
-      id: 2,
-      Name: "Sanket",
-      Email: "sanket@gmail.com",
-    },
-    {
-      id: 3,
-      Name: "Ranjan",
-      Email: "Ranjan@gmail.com",
-    },
-    {
-      id: 4,
-      Name: "Sameer",
-      Email: "sameer@gmail.com",
-    },
-  ];
+  // const data = [
+  //   {
+  //     id: 1,
+  //     Name: "Sohel",
+  //     Email: "sohel@gmail.com",
+  //   },
+  //   {
+  //     id: 2,
+  //     Name: "Sanket",
+  //     Email: "sanket@gmail.com",
+  //   },
+  //   {
+  //     id: 3,
+  //     Name: "Ranjan",
+  //     Email: "Ranjan@gmail.com",
+  //   },
+  //   {
+  //     id: 4,
+  //     Name: "Sameer",
+  //     Email: "sameer@gmail.com",
+  //   },
+  // ];
   return (
     <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
       <div className="w-50 bg-white rounded p-3">
