@@ -37,7 +37,7 @@ const Home = () => {
   return (
     <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
       <div className="w-50 bg-white rounded p-3">
-        <h2>Student List</h2>
+        <h2>User List</h2>
         <div className="d-flex justify-content-end">
           <Link to={"/create"} className="btn btn-success">
             Create
@@ -53,14 +53,19 @@ const Home = () => {
             </tr>
           </thead>
           <tbody>
-            {data.map((student, index) => {
+            {data.map((user, index) => {
               return (
                 <tr key={index}>
-                  <td>{student.id}</td>
-                  <td>{student.Name}</td>
-                  <td>{student.Email}</td>
+                  <td>{user.id}</td>
+                  <td>{user.Name}</td>
+                  <td>{user.Email}</td>
                   <td>
-                    <button className="btn btn-sm btn-info">Read</button>
+                    <Link
+                      to={`/read/${user.id}`}
+                      className="btn btn-sm btn-info"
+                    >
+                      Read
+                    </Link>
                     <button className="btn btn-sm btn-primary mx-2">
                       Edit
                     </button>

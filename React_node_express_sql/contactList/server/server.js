@@ -1,48 +1,3 @@
-// import express from "express";
-// import mysql from "mysql";
-// import cors from "cors";
-
-// const app = express();
-// app.use(cors());
-
-// const db = mysql.createConnection({
-//   host: "localhost",
-//   user: "root",
-//   password: "root",
-//   database: "crud",
-// });
-// db.connect((error) => {
-//   if (error) {
-//     console.log(error);
-//     return;
-//   }
-//   console.log("Successfully connected with Database");
-// });
-
-// app.get("/hi", (req, res) => {
-//   res.json({ Message: "hi, I am working" });
-// });
-// app.get("/", (req, res) => {
-//   const sql = "SELECT * FROM student";
-//   db.query(sql, (err, result) => {
-//     if (err) return res.json({ Message: "Error executing", details: err });
-
-//     return res.json({ result });
-//   });
-// });
-
-// app.post("/student", (req, res) => {
-//   const sql = "INSERT INTO student (`Name`, `Email`) VALUES (?)";
-//   const value = [req.body.name, req.body.email];
-//   db.query(sql, [value], (err, result) => {
-//     if (err) return res.json(err);
-//     return res.json({ result });
-//   });
-// });
-// app.listen(8081, () => {
-//   console.log(`listening on 8081`);
-// });
-
 const express = require("express");
 const mysql = require("mysql");
 const bodyParser = require("body-parser");
@@ -56,10 +11,7 @@ const db = mysql.createConnection({
   user: "root",
   password: "1234",
   database: "crud",
-  //   host: "localhost",
-  //   user: "root",
-  //   password: "root",
-  //   database: "crud",
+ 
 });
 
 db.connect((err) => {
@@ -79,7 +31,7 @@ app.use(express.json());
 app.post("/users", (req, res) => {
   const { name, email } = req.body;
   db.query(
-    "INSERT INTO student (name, email) VALUES (?, ?)",
+    "INSERT INTO user (name, email) VALUES (?, ?)",
     [name, email],
     (err, result) => {
       if (err) {
@@ -94,7 +46,7 @@ app.post("/users", (req, res) => {
 
 // Read all users
 app.get("/users", (req, res) => {
-  db.query("SELECT * FROM student", (err, results) => {
+  db.query("SELECT * FROM user", (err, results) => {
     if (err) {
       console.error("MySQL error: " + err.message);
       res.status(500).send("Error while fetching users");
@@ -107,7 +59,7 @@ app.get("/users", (req, res) => {
 // Read a single user by ID
 app.get("/users/:id", (req, res) => {
   const userId = req.params.id;
-  db.query("SELECT * FROM student WHERE id = ?", [userId], (err, results) => {
+  db.query("SELECT * FROM user WHERE id = ?", [userId], (err, results) => {
     if (err) {
       console.error("MySQL error: " + err.message);
       res.status(500).send("Error while fetching user");
@@ -124,7 +76,7 @@ app.put("/users/:id", (req, res) => {
   const userId = req.params.id;
   const { name, email } = req.body;
   db.query(
-    "UPDATE student SET name = ?, email = ? WHERE id = ?",
+    "UPDATE user SET name = ?, email = ? WHERE id = ?",
     [name, email, userId],
     (err, result) => {
       if (err) {
@@ -142,7 +94,7 @@ app.put("/users/:id", (req, res) => {
 // Delete a user by ID
 app.delete("/users/:id", (req, res) => {
   const userId = req.params.id;
-  db.query("DELETE FROM student WHERE id = ?", [userId], (err, result) => {
+  db.query("DELETE FROM user WHERE id = ?", [userId], (err, result) => {
     if (err) {
       console.error("MySQL error: " + err.message);
       res.status(500).send("Error while deleting user");

@@ -1,17 +1,23 @@
 import { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Create = () => {
   const [formdata, setFormdata] = useState({
     name: "",
     email: "",
   });
+
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formdata);
     axios
       .post("http://localhost:8081/users", formdata)
-      .then((res) => console.log(res))
+      .then((res) => {
+        console.log(res);
+        navigate("/");
+      })
       .catch((err) => console.log(err));
   };
   return (
