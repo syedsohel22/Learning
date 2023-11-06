@@ -1,5 +1,7 @@
 Creating a schema for a "Movie Ticket Booking App" with tables for users, tickets, theaters, shows, seats, and movies involves defining the structure of the database and the relationships between these entities. Below is a simplified schema for such an application:
 
+
+
 1. **Users Table:**
 
    - `user_id` (Primary Key)
@@ -56,4 +58,3 @@ The relationships between these tables can be described as follows:
 - Each ticket is associated with one user, one show, and one seat, which creates three one-to-many relationships: Users to Tickets (1 user to many tickets), Shows to Tickets (1 show to many tickets), and Seats to Tickets (1 seat to many tickets).
 
 This schema should provide a foundation for your "Movie Ticket Booking App" database.
-
