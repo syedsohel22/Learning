@@ -1,1 +1,34 @@
 here will be the all important topics for the SQL (Relational database)
+
+
+
+## Basic SQL Concepts:
+1. Introduction to Databases
+2. What is SQL?
+3. Relational Databases
+4. Basic SQL Syntax
+5. Data Types
+6. Creating Databases and Tables
+7. Inserting Data
+8. Retrieving Data (SELECT)
+9. Filtering Data (WHERE)
+10. Sorting Data (ORDER BY)
+11. Updating and Deleting Data
+12. Basic SQL Functions (e.g., COUNT, SUM, AVG)
+
+## Advanced SQL Concepts:
+13. Aggregation (GROUP BY, HAVING)
+14. JOINs (INNER, LEFT, RIGHT, FULL)
+15. Subqueries
+16. Indexes
+17. Constraints (PRIMARY KEY, FOREIGN KEY, UNIQUE, CHECK)
+18. Transactions
+19. Views
+20. Stored Procedures
+21. Triggers
+22. Common Table Expressions (CTEs)
+23. Window Functions
+24. Analytic Functions
+25. Performance Optimization
+26. Security and Permissions
+
