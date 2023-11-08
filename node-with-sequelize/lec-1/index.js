@@ -1,5 +1,10 @@
 const express = require("express");
+var bodyParser = require("body-parser");
+
+require("./model/index");
 const app = express();
+
+app.use(bodyParser.json());
 app.get("/", (req, res) => {
   res.send("hello world");
 });
