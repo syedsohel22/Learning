@@ -1,10 +1,10 @@
-const { Sequelize } = require("seqelize");
+const { Sequelize } = require("sequelize");
 
 // Option 3: Passing parameters separately (other dialects)
 const sequelize = new Sequelize("employeedb", "root", "1234", {
   host: "localhost",
   dialect:
-    mysql /* one of '' | 'postgres' | 'sqlite' | 'mariadb' | 'mssql' | 'db2' | 'snowflake' | 'oracle' */,
+    "mysql" /* one of '' | 'postgres' | 'sqlite' | 'mariadb' | 'mssql' | 'db2' | 'snowflake' | 'oracle' */,
 });
 
 try {
