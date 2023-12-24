@@ -25,7 +25,7 @@ select * from admins;
 SET SQL_SAFE_UPDATES = 0;
 
 
-select 
+ select 
 	leads.id
 from
 	report_entries
@@ -37,12 +37,14 @@ join leads
 	on (
 		leads.id = status_activities.lead_id
 		and status_activities.status = "complete_program_explained"
-		)
+        )
         where
-	report_id = 84
-
+	report_id =93
+    and status_activities.updated_by = 6
 group by
 	leads.id;
+
+select * from sales.leads;
 
 
 
