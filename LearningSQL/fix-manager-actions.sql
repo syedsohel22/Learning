@@ -17,6 +17,15 @@ WHERE id = 3;
 SELECT * FROM sales.lead_access_policies;
 
 select * from sales.lead_access_policies where lead_owner_id =2;
-
+select * from sales.admins;
 SELECT * FROM sales.admin_roles;
 SELECT * FROM sales.lead_access_policies;
+select * from sales.hrms_candidate_activities;
+desc sales.hrms_candidate_activities;
+select * from sales.hrms_candidate_interactions;
+select * from sales.hrms_candidates where id=36;
+
+desc sales.hrms_candidates;
+select lead_owner_id from lead_access_policies where lead_accessor_id =1;
+
+
