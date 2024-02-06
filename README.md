@@ -1,2 +1,2 @@
 # Learning 
-this repo is for learn to code..!
+this repo is for learning to code..!
