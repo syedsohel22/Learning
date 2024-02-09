@@ -1,0 +1,13 @@
+.item {
+  width: 25%;
+  border: 1px solid black;
+}
+
+.item > img {
+  width: 100%;
+}
+
+#container {
+  display: flex;
+  gap: 10px;
+}

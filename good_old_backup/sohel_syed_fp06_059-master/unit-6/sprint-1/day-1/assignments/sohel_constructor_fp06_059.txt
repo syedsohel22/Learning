@@ -1,0 +1,36 @@
+=>DBEX
+=> Defination 
+In JavaScript, a constructor function is a special type of function that is used to create new objects with the same properties and methods. Constructor functions are used to create classes, which can be used to create multiple instances of objects with the same properties and methods.
+
+To create a constructor function, you define a function with the function keyword, and use the this keyword to define properties and methods on the object that will be created. You can then use the new keyword to create a new instance of the object, and assign it to a variable.
+
+=>Benefits
+Constructor functions are often used in object-oriented programming to create classes that can be used to create objects with similar properties and methods. By defining a class with a constructor function, you can create multiple instances of the class with different values for the properties.
+
+
+=>Example
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+  
+  this.greet = function() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+  }
+}
+
+const person1 = new Person('Chunnu', 25);
+const person2 = new Person('Munnu', 30);
+
+person1.greet(); 
+Output: "Hello, my name is Chunnu and I am 25 years old."
+
+person2.greet(); 
+Output: "Hello, my name is Munnu and I am 30 years old."
+
+In this example, we define a constructor function Person with two parameters name and age. Inside the function, we use the this keyword to define properties name and age on the object that will be created. We also define a method greet that logs a message to the console.
+
+To create a new instance of the Person object, we use the new keyword followed by the constructor function and pass in the arguments name and age. We then assign the new object to a variable, person1 and person2.
+
+Finally, we call the greet method on each instance of the Person object, which logs a message to the console with the name and age of the person. This shows how we can use a constructor function to create multiple instances of an object with similar properties and methods.
+
+=>Extra Information 

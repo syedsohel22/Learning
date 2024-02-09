@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/style/index.css" />
+    <title>Youtube Clone</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div id="navbar">
+      <div id="logos1">
+        <div id="Hamburger_icon">
+          <img src="/images/Hamburger_icon.svg.png" alt="" />
+        </div>
+        <div id="ytlogo">
+          <img src="/images/youtube-logo-png-46020.png" alt="logo" />
+        </div>
+      </div>
+      <div id="s_div">
+        <input type="text" placeholder="Search" id="query" />
+        <button onclick="searchVideos()">
+          <img src="/images/search.png" alt="" />
+        </button>
+      </div>
+      <div id="nav3">
+        <img src="/images/upload.png" alt="" />
+        <img src="/images/notification.png" alt="" />
+        <a href="/auth.html">
+          <img
+            src="/images/933-9332131_profile-picture-default-png.png"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+    <!-- bigbox with 2 box -->
+    <div id="bigbox">
+      <div id="side_panel">
+        <div>
+          <img src="/images/home.png" alt="" />
+          <p>Home</p>
+        </div>
+        <div>
+          <img src="/images/explore.png" alt="" />
+          <p>Explore</p>
+        </div>
+        <div><img src="/images/playlist.png" alt="" />Playlist</div>
+        <div>
+          <img src="/images/subscriprion.png" alt="" />
+          <p>Subsricptions</p>
+        </div>
+        <hr />
+        <div>
+          <img src="/images/library.png" alt="" />
+          <p>Library</p>
+        </div>
+        <div>
+          <img src="/images/history.png" alt="" />
+          <p>History</p>
+        </div>
+        <div>
+          <img src="/images/watch-later-1781603-1513853.webp" alt="" />
+          <p>Watch Later</p>
+        </div>
+        <div>
+          <img src="/images/like.png" alt="" />
+          <p>Liked videos</p>
+        </div>
+        <hr />
+        <!-- <div>SUBSCRIPTIONS</div>
+        <div>Music</div>
+        <div>Sport</div>
+        <div>Gaming</div>
+        <div>Films</div>
+        <hr />
+        <div>EXPLORE</div>
+        <div>Films</div>
+        <div>Gaming</div>
+        <div>Live</div> -->
+      </div>
+      <div id="mainbox">
+        <div id="options">
+          <div>
+            <!-- <button onclick="popularVideos()">Popular videos</button>
+            <button></button>
+            <button></button> -->
+            <label for="sortByt">Sort Videos By:</label>
+            <!-- view, title, popularity -->
+            <select name="sorting" id="sortBy">
+              <option value="">--Please choose an option--</option>
+              <option value="view">view</option>
+              <option value="title">title</option>
+              <option value="popularity">popularity</option>
+            </select>
+          </div>
+          <div>All</div>
+          <div>Music</div>
+          <div>Live</div>
+          <div>Trailer</div>
+          <div>Movies</div>
+          <div>Albums</div>
+          <div>Tech</div>
+          <div>Sport</div>
+          <div>Story</div>
+          <div>Kids</div>
+          <div>News</div>
+          <div>Comedy</div>
+        </div>
+        <div id="container"></div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="/script/index.js"></script>

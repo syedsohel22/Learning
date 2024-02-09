@@ -1,0 +1,34 @@
+/* body {
+  padding: 500px 500px;
+} */
+#search_box {
+  padding-top: 50px;
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#search_box > img {
+  width: 100%;
+}
+#container {
+  width: 80%;
+  margin: auto;
+}
+
+/* #resultList {
+  border: 1px solid black;
+  border-radius: 10px;
+} */
+
+#resdivs {
+  border: 1px solid purple;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 5px;
+  background-color: rgb(238, 219, 135);
+}

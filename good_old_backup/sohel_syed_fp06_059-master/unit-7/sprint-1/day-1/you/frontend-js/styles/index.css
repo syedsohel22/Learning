@@ -1,0 +1,15 @@
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: bisque;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#navbar > h2 {
+  color: brown;
+  font-family: cursive;
+  cursor: pointer;
+}

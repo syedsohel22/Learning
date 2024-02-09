@@ -1,0 +1,130 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: rgb(244, 244, 244);
+}
+.headings {
+  border: 0px solid black;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+.services {
+  border: 0px solid red;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.services > div {
+  border: 0px solid green;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.services > div > div:nth-child(2) {
+  margin-left: 20px;
+  line-height: 0.8cm;
+  padding: 10px;
+}
+
+button {
+  background-color: #3b60f7;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+.discover {
+  border: 0px solid black;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.discover > div {
+  border: 0px solid green;
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.doctors {
+  border: 0px solid black;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  margin-bottom: 40px;
+}
+.doctors > div:nth-child(2) {
+  display: flex;
+  gap: 10px;
+}
+.doctors > div > div {
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 5px;
+}
+/* Medium screens */
+@media all and (min-width: 651px) and (max-width: 900px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .doctors {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .doctors > div:nth-child(2) {
+    width: 90%;
+  }
+}
+/* Small screens */
+@media all and (min-width: 250px) and (max-width: 650px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
+  .services > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .services > div > div > img {
+    width: 100%;
+  }
+  .discover {
+    display: flex;
+    flex-direction: column;
+  }
+  .discover > div {
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .doctors {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .doctors > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+  }
+}

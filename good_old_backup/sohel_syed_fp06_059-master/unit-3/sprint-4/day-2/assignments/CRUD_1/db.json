@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "caption": "5454",
+      "id": "34",
+      "image_url": "https://i.ibb.co/QNxPhc8/active-listenning.jpg"
+    },
+    {
+      "caption": "kingdom",
+      "id": "2",
+      "image_url": "https://i.ibb.co/ns1GZQY/listening-skills.jpg"
+    },
+    {
+      "caption": "house",
+      "id": "3",
+      "image_url": "https://i.ibb.co/syCg6G2/black.jpg"
+    },
+    {
+      "caption": "working",
+      "id": "5",
+      "image_url": "https://i.ibb.co/rcTD9k5/jesse-orrico-ILjkg-AI7-Vwg-unsplash.jpg"
+    },
+    {
+      "caption": "t",
+      "id": "6",
+      "image_url": "https://i.ibb.co/pQ9Kv3p/Watch-Time-s-Top-10-Most-Popular-Watches-on-Pinterest.jpg"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

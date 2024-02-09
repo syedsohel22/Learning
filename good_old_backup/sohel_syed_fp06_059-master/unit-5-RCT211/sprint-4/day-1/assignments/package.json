@@ -1,0 +1,22 @@
+{
+  "name": "assignments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "tsc src/1.ts",
+    "foo": "tsc src/Datatype.ts",
+    "bar": "tsc src/3.ts",
+    "bar1": "tsc src/4.ts",
+    "ts": "tsc src/typescript1.ts",
+    "ts2": "tsc src/typescript2.ts",
+    "ts3": "tsc src/typescript3.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^5.0.2"
+  }
+}

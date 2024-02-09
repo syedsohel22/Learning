@@ -1,0 +1,21 @@
+{
+  "name": "assignments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ts_1": "tsc src/typescript1.ts",
+    "ts_2": "tsc src/typescript2.ts",
+    "ts_3": "tsc src/typescript3.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsc": "^2.0.4"
+  },
+  "dependencies": {
+    "typescript": "^4.9.4"
+  }
+}

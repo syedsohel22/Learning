@@ -1,0 +1,39 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "status": true
+    },
+    {
+      "title": "Learn React",
+      "status": true,
+      "id": 2
+    },
+    {
+      "title": "Learn Redux",
+      "status": false,
+      "id": 3
+    },
+    {
+      "title": "Learn TypeScript",
+      "status": true,
+      "id": 4
+    },
+    {
+      "title": "Learn Node",
+      "status": false,
+      "id": 5
+    },
+    {
+      "title": "Learn Comm",
+      "status": true,
+      "id": 6
+    },
+    {
+      "title": "Learn Pasta",
+      "status": false,
+      "id": 7
+    }
+  ]
+}

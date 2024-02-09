@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* sudo selector */
+      :root {
+        /* CSS variables  */
+        --primary-color: #3498db;
+        --secondary-color: #e74c3c;
+      }
+
+      h1 {
+        /* var function is used to use css variables */
+        color: var(--primary-color);
+      }
+
+      button {
+        background-color: var(--secondary-color);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      p::before {
+        content: "Note: ";
+        font-weight: bold;
+      }
+
+      p::after {
+        content: " - End of paragraph";
+        font-style: italic;
+      }
+
+      h1::first-line {
+        font-size: 24px;
+      }
+
+      ::selection {
+        background-color: yellow;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Day1 - 
+Questions are as follows:
+What is the difference between position absolute and relative?
+What are CSS variables?
+What are the differences between Flex and Grids?
+What is specificity, and how do you calculate it?
+What are media queries?
+What are the different types of storage in HTML5? 
+What are event listeners in HTML?
+What is an onload event?
+How do you use Video and Audio tags?
+What are meta tags?
+What are the different primitive data types in JS?
+What is the difference between null, undefined, and NaN?
+What are higher-order functions? What are callbacks?
+How are objects different from arrays?
+What is the difference between Java and Javascript? -->
+
+    <h1>This is a Heading</h1>
+    <p>this is a paragraph</p>
+    <button id="colorButton">Change Primary Color</button>
+
+    <script>
+      const colorButton = document.getElementById("colorButton");
+      // how to dynamically change the css variable values
+      colorButton.addEventListener("click", () => {
+        // Change the value of the primary color variable
+        document.documentElement.style.setProperty(
+          "--primary-color",
+          "#ff5733"
+        );
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+#container{
+    border: 0px solid red;
+    width: 20%;
+    margin: auto;
+    display: flex;
+}
+
+#container>form>input{
+    margin: 5px 0 0 40px;
+    padding: 10px;
+
+   
+}

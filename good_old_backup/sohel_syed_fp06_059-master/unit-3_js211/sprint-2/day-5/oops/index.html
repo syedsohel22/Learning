@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        padding: 100px 100px;
+        background-color: rgb(255, 246, 235);
+      }
+      #tododiv {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        width: 400px;
+        margin-top: 10px;
+      }
+
+      #delete {
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+        border: none;
+      }
+
+      #toggle {
+        background-color: green;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+        border: none;
+        margin-left: 10px;
+      }
+
+      #addtodobtn {
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+        border: none;
+      }
+    </style>
+    <title>Todo App using Classes</title>
+  </head>
+  <body>
+    <h1>To Do App</h1>
+    <input type="text" id="todo" placeholder="ADD Todo" />
+    <button id="addtodobtn" onclick="addTodo()">Add Todo</button>
+    <div id="container"></div>
+  </body>
+</html>
+<script src="./index.js"></script>

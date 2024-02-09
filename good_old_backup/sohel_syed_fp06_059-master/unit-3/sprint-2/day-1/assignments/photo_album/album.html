@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #gmode {
+      width: 50%;
+      margin: auto;
+      border: 1px solid black;
+      padding: 20px;
+    }
+    #btn {
+      width: 50%;
+      margin: auto;
+      padding: 20px;
+    }
+    #start {
+      background-color: green;
+      padding: 5px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: medium;
+      color: #fff;
+    }
+
+    #stop {
+      background-color: red;
+      padding: 5px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: medium;
+      color: #fff;
+    }
+
+    #back {
+      background-color: grey;
+      padding: 5px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: medium;
+      color: #fff;
+      text-decoration: none;
+    }
+    #container {
+      width: 50%;
+      margin: auto;
+      border: 1px solid black;
+    }
+    img {
+      width: 100%;
+      height: 50vh;
+    }
+  </style>
+  <body>
+    <div id="gmode">
+      <h2>Photo Album</h2>
+
+      <p>Here Image will change for Every 2 second</p>
+      <button id="back"><a href="/index.html">Back</a></button>
+      <button id="gamemode"><a href="/game.html">Game Mode</a></button>
+    </div>
+    <div id="btn">
+      <button id="start" onclick="start()">Start</button>
+      <button id="stop" onclick="stop()">Stop</button>
+    </div>
+
+    <div id="container"></div>
+  </body>
+</html>
+<script src="/album.js"></script>

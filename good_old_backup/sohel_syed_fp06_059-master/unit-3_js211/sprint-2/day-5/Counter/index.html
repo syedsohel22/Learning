@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #container {
+        width: 50%;
+        margin: auto;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin-top: 200px;
+        padding: 10px;
+        text-align: center;
+      }
+      #countdown {
+        width: 200px;
+        height: 300px;
+        font-size: 200px;
+        text-align: center;
+      }
+    </style>
+    <title>Counter</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>A counter using ES6 classes.</h1>
+      <div id="countdown"></div>
+      <button id="start" onclick="count()">Start</button>
+      <button id="stop" onclick=" myStopFunction()">stop</button>
+      <button id="increment" onclick="increment()">Increment</button>
+      <button id="decrement" onclick="decrement()">Decrement</button>
+    </div>
+  </body>
+</html>
+<script>
+  let c = 0;
+  let countdown = document.getElementById("countdown");
+  let b = 0;
+  let onebtnfunc = () => {
+    b++;
+    if (b % 2 == 0) {
+      count();
+    } else if (b % 2 == 1) {
+      myStopFunction();
+    }
+    console.log(b);
+  };
+
+  const count = setInterval(function () {
+    c++;
+    countdown.innerHTML = null;
+    countdown.append(c);
+  }, 1000);
+
+  function myStopFunction() {
+    clearInterval(count);
+  }
+  function increment() {
+    c++;
+    countdown.innerHTML = null;
+    countdown.append(c);
+  }
+
+  function decrement() {
+    c--;
+    countdown.innerHTML = null;
+    countdown.append(c);
+  }
+</script>

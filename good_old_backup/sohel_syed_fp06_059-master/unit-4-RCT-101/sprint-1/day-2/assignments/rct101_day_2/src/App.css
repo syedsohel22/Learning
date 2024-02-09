@@ -1,0 +1,153 @@
+.App {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  width: 70%;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: #fafbfc;
+  justify-content: space-between;
+}
+.flex_details {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  border-radius: 20px;
+  margin: 10px;
+  background-color: #fafbfc;
+  justify-content: space-between;
+  color: blue;
+  font-style: italic;
+}
+.btn {
+  background-color: #24292f;
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #404040;
+}
+.skill_box {
+  display: flex;
+  border: none;
+  border: 0.01px solid #d3d3d3;
+  border-radius: 20px;
+  padding: 3px;
+  margin: 5px;
+}
+.skills {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+p {
+  color: teal;
+  font-size: 19px;
+  margin-top: -10px;
+  margin-left: 10px;
+  font-style: oblique;
+}
+.skill_text {
+  font-size: 15px;
+}
+.profile_image {
+  border-radius: 50%;
+  width: 200px;
+  margin: 20px;
+  margin-left: 30px;
+}
+.icon {
+  margin-right: 5px;
+}
+@media only screen and (max-width: 450px) {
+  .flex {
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex_details {
+    width: 100%;
+    margin: 15px auto;
+    padding: 0 5px;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  .skill_text {
+    font-size: 16px;
+  }
+  .flex_details > h2 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 17px;
+  }
+  .profile_image {
+    width: 150px;
+    margin: none;
+  }
+}
+@media only screen and (max-width: 541px) {
+  .flex {
+    /* flex-direction: column-reverse; */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex_details {
+    width: 100%;
+    margin: 15px auto;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  .skill_text {
+    font-size: 16px;
+  }
+  .flex_details > h2 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 17px;
+  }
+  .profile_image {
+    width: 150px;
+    margin: none;
+  }
+}
+@media only screen and (max-width: 821px) {
+  .flex {
+    width: 95%;
+    margin: 10px auto;
+  }
+  .flex_details {
+    width: 95%;
+    margin: 15px auto;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  .skill_text {
+    font-size: 16px;
+  }
+  .flex_details > h2 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 17px;
+  }
+  .profile_image {
+    width: 150px;
+    margin: none;
+  }
+}
+@media only screen and (max-width: 913px) {
+  .flex {
+    width: 95%;
+  }
+}

@@ -1,0 +1,15 @@
+#container {
+  width: 40%;
+  margin: auto;
+
+  align-items: center;
+}
+body {
+  width: 40%;
+  margin: auto;
+  border: 1px solid black;
+  align-items: center;
+  text-align: center;
+  margin-top: 200px;
+  padding: 10px;
+}

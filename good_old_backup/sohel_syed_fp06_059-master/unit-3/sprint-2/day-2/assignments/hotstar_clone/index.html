@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stayles/index.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div id="navbar">
+      <div></div>
+      <div>
+        <img
+          src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+          alt="logo"
+        />
+      </div>
+      <div>TV</div>
+      <div>MOVIE</div>
+      <div>SPORTS</div>
+      <div>Disney+</div>
+      <div>
+        <img
+          src="https://www.hotstar.com/assets/4aa70ede8904e16b7630300c09219c8e.svg"
+          alt=""
+        />
+      </div>
+      <input oninput="debounce(searchMovies,2000)" type="text" id="query" placeholder="Search"/>
+      <!-- <button onclick="searchMovies()">Search</button> -->
+      <button id="sub">SUBSCRAIBE</button>
+      <div>LOGIN</div>
+    </div>
+    <!-- slider -->
+    <div id="slider"></div>
+    <div id="sorting">
+      <button onclick="sortLH()">Low To High</button>
+      <button onclick="sortHL()">High To Low</button>
+    </div>
+  </div>
+  <div id="search_result"></div>
+   
+
+    <div id="basic">
+      <img
+        id="loader"
+        src="https://media2.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif?cid=ecf05e47r2tfvszp3vgec388i2ak8dj1rajim4otc9wj4hg0&rid=giphy.gif&ct=g"
+        alt=""
+      />
+    </div>
+  </body>
+</html>
+<script src="/scripts/index.js"></script>

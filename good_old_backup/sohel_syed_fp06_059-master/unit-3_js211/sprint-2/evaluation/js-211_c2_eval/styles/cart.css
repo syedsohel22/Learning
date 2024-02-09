@@ -1,0 +1,39 @@
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+
+a {
+  color: white;
+}
+
+#items {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.item {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+#checkout > button {
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-right: 20px;
+}
+#checkout {
+  background-color: grey;
+  padding: 20px;
+  text-align: center;
+}

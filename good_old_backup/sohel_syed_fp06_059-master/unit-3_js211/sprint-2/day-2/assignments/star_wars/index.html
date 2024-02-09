@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Star Wars Characters</title>
+  </head>
+  <body>
+    <div id="search_box">
+      <img
+        src="https://i.pinimg.com/originals/25/53/5e/25535e33dff1d8e191f2ac9219aaf217.jpg"
+        alt=""
+      />
+      <br />
+      <input
+        type="text"
+        id="query"
+        oninput="debounce(search,2000)"
+        placeholder="Search"
+      />
+      <div id="resultList"></div>
+    </div>
+  </body>
+</html>
+<script src="./index.js"></script>

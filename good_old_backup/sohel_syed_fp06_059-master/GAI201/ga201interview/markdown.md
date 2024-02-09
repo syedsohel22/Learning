@@ -1,0 +1,1 @@
+## In this coding task, design the backend of a basic Instagram-like web application employing Django. While omitting database integration and user authentication, manage the application's data via Django's in-built models and queries.

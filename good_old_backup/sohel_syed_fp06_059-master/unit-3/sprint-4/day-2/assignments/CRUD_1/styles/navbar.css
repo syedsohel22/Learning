@@ -1,0 +1,100 @@
+body {
+  background-color: rgb(239, 239, 239);
+}
+
+#posts {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: center;
+  margin: 0 30% 70%;
+  /* background-color: #fff; */
+}
+#posts p {
+  padding: 20px;
+}
+
+#posts img {
+  width: 100%;
+  background-color: #fff;
+}
+#posts div {
+  margin: 3%;
+  border: solid 0px black;
+  width: 470px;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+#navbar div {
+  display: flex;
+  justify-content: center;
+  border: solid 0px black;
+}
+#logo {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+#logo img {
+  width: 30%;
+}
+#search {
+  flex: 2;
+}
+#options {
+  flex: 3;
+  display: flex;
+  align-items: center;
+}
+/* here */
+#sidepanel {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+}
+#sidepanel > div > img {
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+}
+
+#sidepanel > div {
+  display: flex;
+
+  align-items: center;
+  font-size: 20px;
+  /* padding: 5px; */
+  border: 0px solid black;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+#sidepanel > div :hover {
+  background: rgb(246, 41, 215);
+  color: #fff;
+}
+
+#story {
+  display: flex;
+  width: 35%;
+  margin: auto;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #fff;
+}
+#story > div {
+  padding-top: 10px;
+}
+#story > div > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 5px solid rgb(212, 72, 158);
+}

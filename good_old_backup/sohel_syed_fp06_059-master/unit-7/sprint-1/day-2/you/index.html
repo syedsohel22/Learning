@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+
+      .tooltip .tooltip-text {
+        visibility: hidden;
+        width: 120px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        border-radius: 4px;
+        padding: 4px;
+        position: absolute;
+        z-index: 1;
+      }
+
+      .tooltip:hover .tooltip-text {
+        visibility: visible;
+      }
+
+      .tooltip .tooltip-text.left {
+        top: 50%;
+        right: 100%;
+        transform: translateY(-50%);
+      }
+
+      .tooltip .tooltip-text.right {
+        top: 50%;
+        left: 100%;
+        transform: translateY(-50%);
+      }
+
+      .tooltip .tooltip-text.top {
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .tooltip .tooltip-text.bottom {
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .button {
+        padding: 8px 16px;
+        background-color: #f1f1f1;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .button-left {
+        margin-right: 16px;
+      }
+
+      .button-right {
+        margin-left: 16px;
+      }
+
+      .button-top {
+        margin-bottom: 16px;
+      }
+
+      .button-bottom {
+        margin-top: 16px;
+      }
+      #container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>CSS ToolTip</h1>
+    <div id="container">
+      <div class="tooltip">
+        <button class="button button-left">Left</button>
+        <span class="tooltip-text left">Tooltip Left</span>
+      </div>
+
+      <div class="tooltip">
+        <button class="button button-right">Right</button>
+        <span class="tooltip-text right">Tooltip Right</span>
+      </div>
+
+      <div class="tooltip">
+        <button class="button button-top">Top</button>
+        <span class="tooltip-text top">Tooltip Top</span>
+      </div>
+
+      <div class="tooltip">
+        <button class="button button-bottom">Bottom</button>
+        <span class="tooltip-text bottom">Tooltip Bottom</span>
+      </div>
+    </div>
+  </body>
+</html>

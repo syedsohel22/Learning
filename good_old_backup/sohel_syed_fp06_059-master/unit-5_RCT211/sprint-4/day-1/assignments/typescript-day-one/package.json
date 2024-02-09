@@ -1,0 +1,17 @@
+{
+  "name": "typescript-day-one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ts1": "tsc p1.ts",
+    "ts2": "tsc p2.ts",
+    "ts3": "tsc p3.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  }
+}

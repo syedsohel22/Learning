@@ -1,0 +1,18 @@
+#container{
+    border: 0px solid red;
+    width: 80%;
+    margin: auto;
+}
+
+#container>div{
+border: 1px solid black;
+width: 30%;
+margin: auto;
+text-align: center;
+padding: 20px;
+}
+
+#container>div>img{
+    width: 100px;
+    height: 100px;
+}

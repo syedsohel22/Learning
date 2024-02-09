@@ -1,0 +1,3 @@
+export const GET_QUIZ_PENDING = "GET_QUIZ_PENDING";
+export const GET_QUIZ_SUCCESS = "GET_QUIZ_SUCCESS";
+export const GET_QUIZ_REJECT = "GET_QUIZ_REJECT";

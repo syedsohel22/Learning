@@ -1,0 +1,11 @@
+div {
+  border: 1px solid black;
+}
+
+#cart {
+  display: flex;
+}
+#cart > img {
+  width: 100px;
+  height: 100px;
+}

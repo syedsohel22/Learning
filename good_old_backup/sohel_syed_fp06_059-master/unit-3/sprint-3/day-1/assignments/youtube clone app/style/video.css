@@ -1,0 +1,21 @@
+#navbar {
+  height: 100px;
+}
+
+div {
+  border: 1px solid black;
+}
+
+/* #videoDetails,
+#Recommeneded, */
+#main {
+  display: flex;
+  height: 600px;
+}
+
+#videoDetails {
+  flex: 3;
+}
+#Recommeneded {
+  flex: 1;
+}

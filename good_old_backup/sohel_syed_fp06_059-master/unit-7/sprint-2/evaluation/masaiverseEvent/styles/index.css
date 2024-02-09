@@ -1,0 +1,28 @@
+#registration-main-box {
+  border: 1px solid black;
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+}
+#registration-main-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-card {
+  width: 300px;
+  border: 1px solid black;
+  padding: 20px;
+  align-items: center;
+}
+
+.user-card > img {
+  width: 100px;
+}
+
+#data-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

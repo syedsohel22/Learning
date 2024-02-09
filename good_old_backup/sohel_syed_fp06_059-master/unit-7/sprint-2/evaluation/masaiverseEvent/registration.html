@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Registration Page</title>
+  </head>
+  <body>
+    <div id="registration-main-div">
+      <div id="back-to-home">
+        <button><a href="./index.html">back to Home</a></button>
+      </div>
+      <div id="registration-main-box">
+        <label for="Name">Enter your name </label><br />
+        <input
+          type="text"
+          name="Name"
+          placeholder="Name"
+          id="register-name"
+        /><br />
+        <label for="Age">Enter your Age </label><br />
+        <input
+          type="number"
+          name="Age"
+          placeholder="Age"
+          id="register-age"
+        /><br />
+        <label for="Place">Enter your Place </label><br />
+        <input
+          type="text"
+          name="Place"
+          placeholder="Place"
+          id="register-place"
+        /><br />
+        <label for="Place">Select your Batch Name </label><br />
+        <select name="Place" id="register-batch">
+          <option value="web-13">WEB-13</option>
+          <option value="web-14">WEB-14</option>
+          <option value="web-15">WEB-15</option></select
+        ><br />
+        <label for="Place">Select your Profession </label><br />
+        <select name="" id="register-profession">
+          <option value="FSD">FSD</option>
+          <option value="Forntend">Forntend</option>
+          <option value="Backend">Backend</option>
+          <option value="Student">Student</option></select
+        ><br />
+        <button id="register-btn">Register</button><br />
+      </div>
+    </div>
+  </body>
+  <script src="./scripts/register.js"></script>
+</html>

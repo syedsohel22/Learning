@@ -1,0 +1,7 @@
+export const PENDING = "PENDING";
+export const FAILURE = "FAILURE";
+
+export const GET_EMPLOYEE = "GET_EMPLOYEE";
+export const POST_EMPLOYEE = "POST_EMPLOYEE";
+export const UPDATE_EMPLOYEE = "UPDATE_EMPLOYEE";
+export const DELETE_EMPLOYEE = "DELETE_EMPLOYEE";

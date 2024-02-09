@@ -1,0 +1,39 @@
+body {
+  padding: 10px 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+  border: 1px solid black;
+  margin-bottom: 30px;
+}
+
+nav div {
+  padding: 2px 20px;
+}
+
+nav div:hover {
+  background-color: grey;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#p_card {
+  width: 200px;
+  height: 350px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#p_card > img {
+  width: 100%;
+}

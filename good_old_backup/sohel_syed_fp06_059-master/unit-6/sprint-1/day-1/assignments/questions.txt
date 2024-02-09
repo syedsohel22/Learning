@@ -1,0 +1,6 @@
+- How does JS works asynchronously even though it is a single threaded programming language?
+- What is the event loop, and how does it work in JavaScript?
+- What are Promises in JavaScript, and how do they work?
+- How does JavaScript handle inheritance, and what are the different ways to implement it? 
+- What is hoisting in JavaScript, and how does it work?
+- What are higher order functions and callback functions also explain the difference between map , reduce and filter. 

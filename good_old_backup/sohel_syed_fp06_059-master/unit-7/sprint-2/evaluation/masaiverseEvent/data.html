@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Data page</title>
+  </head>
+  <body>
+    <div id="data-main-div">
+      <h1>Masaiverse Event Data</h1>
+      <div id="back-to-home">
+        <button><a href="./index.html">back to Home</a></button>
+        <button id="sortLH">Sort Low to High</button>
+        <button id="sortHL">Sort High to Low</button>
+        <input
+          type="text"
+          id="search-name"
+          placeholder="search by name"
+        /><br />
+        <label for="">filter By Profession </label>
+        <select name="" id="filter-profession">
+          <option value="FSD">FSD</option>
+          <option value="Forntend">Forntend</option>
+          <option value="Backend">Backend</option>
+          <option value="Student">Student</option></select
+        ><br />
+      </div>
+      <div id="data-main-box">
+        <div id="data-container">
+          <!-- all the data should append here -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./scripts/data.js"></script>
+</html>

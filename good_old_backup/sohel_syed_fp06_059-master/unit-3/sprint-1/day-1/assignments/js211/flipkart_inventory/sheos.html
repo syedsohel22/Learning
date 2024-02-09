@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoes</title>
+  </head>
+  <body>
+    <h1>Shoes</h1>
+
+    <div id="conta"></div>
+  </body>
+</html>
+<script>
+  let data = JSON.parse(localStorage.getItem("products"));
+
+  let product = (el, id) => {
+    let div = document.createElement("div");
+    let product_category = document.createElement("p");
+    let product_image = document.createElement("img");
+    let product_name = document.createElement("p");
+    let product_brand = document.createElement("p");
+    let product_price = document.createElement("p");
+    let remove_btn = document.createElement("button");
+    remove_btn.innerText = "Remove";
+    remove_btn.onclick = () => {
+      remove(id);
+    };
+
+    product_category.innerText = el.category;
+    product_image.src = el.img;
+    product_name.innerText = el.name;
+    product_brand.innerText = el.brand;
+    product_price.innerText = el.price;
+
+    div.append(
+      product_image,
+      product_category,
+      product_name,
+      product_brand,
+      product_price,
+      remove_btn
+    );
+
+    return div;
+  };
+  let renderDom = () => {
+    let container = document.getElementById("conta");
+
+    container.innerHTML = null;
+    data.forEach((el, index) => {
+      container.append(product(el, index));
+    });
+  };
+
+  // renderDom();
+  console.log("shoe page");
+
+  let remove = (id) => {
+    let data = JSON.parse(localStorage.getItem("products"));
+
+    data.splice(id, 1);
+
+    localStorage.setItem("products", JSON.stringify(data));
+
+    renderDom(data);
+  };
+
+  let filter = () => {
+    let data = JSON.parse(localStorage.getItem("products")) || [];
+
+    data1 = data.filter((el) => el.category === "shoes");
+    renderDom(data);
+    console.log("object filter", data);
+  };
+  filter(data);
+</script>

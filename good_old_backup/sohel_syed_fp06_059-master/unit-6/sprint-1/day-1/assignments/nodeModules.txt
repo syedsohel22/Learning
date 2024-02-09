@@ -1,0 +1,18 @@
+How many types of modules are there in Node? And what are they?
+js includes three types of modules: 
+1.Core Modules.
+2.Local Modules. 
+3.Third Party Modules.
+1.Core Modules.
+Built-in Modules Node.js comes with some modules out of the box. These modules are available for use when you install Node.js. Some common examples of built-in Node modules are the following:
+-http
+-url
+-path
+-fs
+-os
+
+2.Local Modules
+When you work with Node.js, you create local modules that you load and use in your program. 
+
+3.Third Party Modules.
+A cool thing about using modules in Node.js is that you can share them with others. The Node Package Manager (NPM) makes that possible. When you install Node.js, NPM comes along with it.

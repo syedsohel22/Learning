@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+      .card {
+        padding: 10px;
+        border: 1px solid grey;
+      }
+
+      #pagination{
+        display: flex;
+        justify-content:  space-around;
+        padding: 30px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="query">
+        <label for="team1">Select team 1</label>
+        <select name="team1" id="team1">
+            <option value="Barcelona">Barcelona</option>
+            <option value="AC Milan">AC Milan</option>
+        </select>
+
+        <label for="team2">Select team 2</label>
+        <select name="team2" id="team2">
+            <option value="Barcelona">Barcelona</option>
+            <option value="AC Milan">AC Milan</option>
+        </select>
+
+        <label for="year">Select year</label>
+        <select name="year" id="year">
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+        </select>
+
+        <label for="page">Select page</label>
+        <select name="page" id="page">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+             <option value="4">4</option> 
+             <option value="5">5</option>
+        </select>
+
+
+
+        <button onclick="search()">search</button>
+    </div>
+    <div id="pagination">
+      <button onclick="previous()">&#60 &#60 Previous</button>
+      <button onclick="next()">Next &#62 &#62</button>
+    </div>
+    <div id="container"></div>
+  </body>
+  <script src="./index.js"></script>
+</html>

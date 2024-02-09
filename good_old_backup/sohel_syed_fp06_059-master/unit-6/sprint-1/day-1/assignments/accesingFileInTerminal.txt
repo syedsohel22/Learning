@@ -1,0 +1,30 @@
+Question : User
+If I write the following command in terminal:
+
+node index.js 1 2
+
+How can I access 1 and 2 from terminal, add them and print the output as 3?
+(Write the code for it). You can upload the text file
+
+Answer :
+
+To access the command line arguments passed to the Node.js script, you can use the process.argv property. The first two elements of the process.argv array are always the path to the Node.js executable and the path to the script file, respectively. The rest of the elements are the command line arguments.
+
+Here is an example code that adds the first two command line arguments and prints the result:
+
+// index.js
+const num1 = parseInt(process.argv[2]);
+const num2 = parseInt(process.argv[3]);
+
+const sum = num1 + num2;
+
+console.log(sum);
+
+
+To run this code, you can execute the following command in the terminal:
+
+
+node index.js 1 2
+
+
+This should output `3` in the terminal.

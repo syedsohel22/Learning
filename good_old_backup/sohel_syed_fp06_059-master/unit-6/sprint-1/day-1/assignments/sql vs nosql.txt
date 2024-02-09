@@ -1,0 +1,12 @@
+SQL (Structured Query Language) and NoSQL (Not Only SQL) are two different types of databases that differ in their data models, storage mechanisms, and query languages.
+
+SQL databases are relational databases that store data in tables with predefined schemas. Each table contains rows of data with columns representing the attributes of that data. SQL databases enforce data consistency and support transactions, which ensure data integrity and prevent data inconsistencies. SQL databases use the SQL language for querying and manipulating data.
+
+NoSQL databases, on the other hand, are non-relational databases that do not enforce a predefined schema. NoSQL databases are designed to store unstructured, semi-structured, and structured data, making them more flexible than SQL databases. NoSQL databases use a variety of data models, including document-oriented, key-value, graph, and column-family models. NoSQL databases do not support transactions and data consistency is often sacrificed for scalability and availability. NoSQL databases use different query languages and APIs for data access, depending on the data model used.
+
+In summary, the main differences between SQL and NoSQL databases are:
+
+- SQL databases are relational, while NoSQL databases are non-relational.
+- SQL databases have a predefined schema, while NoSQL databases have a flexible schema.
+- SQL databases use SQL for querying and manipulating data, while NoSQL databases use a variety of query languages and APIs.
+- SQL databases enforce data consistency and support transactions, while NoSQL databases prioritize scalability and availability over data consistency.

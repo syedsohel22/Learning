@@ -1,0 +1,12 @@
+What is the meaning of Concurrency in JS? 
+Concurrency in JavaScript refers to the ability of a program to perform multiple tasks or processes at the same time. JavaScript is a single-threaded language, which means it can only execute one task at a time. However, there are several mechanisms in JavaScript that enable concurrency, such as callbacks, promises, async/await, and web workers.
+
+Callbacks are functions that are passed as arguments to other functions and are executed when a certain operation is completed. This allows for non-blocking code execution, where the program can continue to perform other tasks while waiting for the callback function to be called.
+
+Promises are objects that represent the eventual completion or failure of an asynchronous operation and allow for chaining of multiple asynchronous operations. This enables more readable and maintainable code and avoids the "callback hell" problem.
+
+Async/await is a syntax for working with promises that makes asynchronous code look and behave like synchronous code. This improves code readability and makes it easier to reason about the flow of execution.
+
+Web workers are a browser API that allows running JavaScript code in separate threads. This enables concurrent execution of tasks and avoids blocking the main UI thread, resulting in a more responsive and smooth user experience.
+
+Overall, concurrency in JavaScript is essential for building responsive and efficient web applications that can handle multiple tasks and user interactions simultaneously.

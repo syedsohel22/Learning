@@ -1,0 +1,12 @@
+#navbar{
+    display : flex;
+    border:0px solid red;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+#navbar>div{
+    display : flex;
+    border:0px solid red;
+    gap: 5px;
+}

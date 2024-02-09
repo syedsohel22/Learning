@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      #container {
+        width: 40%;
+        margin: auto;
+        border: 0px solid red;
+        height: 520px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding-top: 20px;
+        margin-top: 100px;
+        border-radius: 15px;
+      }
+      #display {
+        width: 80%;
+        margin: auto;
+        border: 0px solid red;
+        height: 70px;
+        margin-top: 30px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 15px;
+        font-weight: bold;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #keyborad {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 70px);
+        border: 0px solid red;
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+        border-radius: 15px;
+      }
+      #keyborad > div {
+        border: 0px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        font-weight: bold;
+        font-size: 40px;
+        border-radius: 15px;
+      }
+      #keyborad > div:hover {
+        background-color: rgb(168, 248, 221);
+      }
+      .black {
+        background-color: black;
+        color: white;
+      }
+      #red {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="display"></div>
+      <div id="keyborad">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div class="black">+</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div class="black">-</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div class="black">*</div>
+        <div id="red">C</div>
+        <div>0</div>
+        <div class="black">=</div>
+        <div class="black">/</div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  let keys = document.querySelectorAll("#keyborad>div");
+  let bag = "";
+  keys.forEach(function (elem) {
+    elem.addEventListener("click", myCal);
+  });
+
+  function myCal(event) {
+    let targetNumber = event.target.innerText;
+    if (targetNumber == "C") {
+      document.querySelector("#display").innerText = "";
+      bag = "";
+    } else if (targetNumber == "=") {
+      document.getElementById("display").innerText = eval(bag);
+    } else {
+      bag = bag + targetNumber;
+      document.getElementById("display").innerText = bag;
+    }
+  }
+</script>

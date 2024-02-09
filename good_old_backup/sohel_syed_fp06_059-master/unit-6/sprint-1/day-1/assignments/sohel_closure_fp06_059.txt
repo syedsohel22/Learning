@@ -1,0 +1,39 @@
+=>DBEX
+=> Defination 
+In JavaScript, a closure is a function that has access to its outer function's variables and parameters,
+ even after the outer function has returned. This means that a closure can remember and 
+ access the variables and parameters of its outer function, even if the outer function is no longer in scope.
+
+A closure is created when a function is defined inside another function and the inner function references variables or parameters from the outer function. The inner function retains a reference to the outer function's scope chain, which allows it to access the outer function's variables and parameters.
+
+=>Benefits
+1.Encapsulation
+2.Asynchronous Programming
+
+
+=>Example
+function outerFunction() {
+  let counter = 0;
+  
+  function innerFunction() {
+    counter++;
+    console.log(counter);
+  }
+  
+  return innerFunction;
+}
+
+const myFunction = outerFunction();
+myFunction(); // Output: 1
+myFunction(); // Output: 2
+myFunction(); // Output: 3
+
+In this example, the outerFunction returns the innerFunction, which increments a counter variable and logs it to the console. When we call outerFunction, it returns the innerFunction, which we store in a variable myFunction. We can then call myFunction multiple times, and it will remember the value of counter across all the calls, because it is inside a closure that retains access to the outerFunction's scope chain.
+
+When we call myFunction for the first time, it logs 1 to the console. When we call it again, it logs 2, and so on. This shows that the innerFunction retains access to the counter variable, even though it is not defined inside the innerFunction itself. This is an example of a closure in JavaScript.
+
+
+=>Extra Information 
+Encapsulation: Closures can be used to create private variables and functions. By defining variables and functions inside a closure, they are not accessible from outside the closure, which can help prevent naming collisions and keep the code organized and modular.
+
+Asynchronous Programming: Closures can be used in asynchronous programming, to capture the state of variables and functions at the time of definition, and use that state later when the function is executed. This can help avoid race conditions and ensure that the correct state is used when the function is called.

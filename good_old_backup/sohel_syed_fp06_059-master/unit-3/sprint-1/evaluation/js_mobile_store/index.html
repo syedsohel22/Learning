@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <style>
+      #navbar {
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        color: white;
+        padding-bottom: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <h2>Mobile Store</h2>
+      <div>
+        <a href="./index.html">Home</a>
+        <a href="./store.html">Store</a>
+      </div>
+    </div>
+
+    <div id="input_data">
+      <h1>Add Mobiles</h1>
+      <form id="mobile_form">
+        <input type="text" id="mobile_name" placeholder="Product Name" />
+        <input type="text" id="mobile_brand" placeholder=" Brand Name" />
+        <input type="number" id="mobile_price" placeholder="Product price" />
+        <input type="text" id="mobile_image" placeholder="Product Image" />
+        <input type="submit" placeholder="submit" />
+      </form>
+    </div>
+    <script src="./src/scripts/index.js"></script>
+  </body>
+</html>
