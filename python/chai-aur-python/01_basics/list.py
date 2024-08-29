@@ -68,3 +68,36 @@ a = [1,2,3,4,5,6,7,8,9,10]
 print(a[::2])
 
 print(a[1::2])
+
+
+# reversing list 
+
+a = [1,2,3,4,5,6,7,8,9,10]
+
+print(a[::-1])
+
+# inserting element in list
+
+a = [1,2,3,4,5,6,7,8,9,10]
+
+a.insert(0,0)
+
+print(a)
+
+
+# deleting element in list
+
+a = [1,2,3,4,5,6,7,8,9,10]
+
+a.pop(0)
+
+print(a)
+
+
+# appending element in list
+
+a = [1,2,3,4,5,6,7,8,9,10]
+
+a.append(11)
+
+print(a)
