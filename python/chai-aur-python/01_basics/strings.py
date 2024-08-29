@@ -61,6 +61,21 @@ print(a.upper())
 
 print(a.lower())
 
+# remove spaces from string
 
+print(a.strip())
 
+# split
 
+print(a.split())
+
+# replace
+
+print(a.replace("l", "x"))
+
+# format
+
+a = "hello"
+b = "world"
+
+print(f"{a} {b}")   
