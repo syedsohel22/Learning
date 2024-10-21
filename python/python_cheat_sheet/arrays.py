@@ -88,3 +88,16 @@ print(arr)
 # Custom sort (by length of string)
 arr.sort(key=lambda x: len(x))
 print(arr)
+
+
+# List comprehension
+arr = [i for i in range(5)]
+print(arr)
+
+# 2-D lists
+arr = [[0] * 4 for i in range(4)]
+print(arr)
+print(arr[0][0], arr[3][3])
+
+# This won't work
+# arr = [[0] * 4] * 4
