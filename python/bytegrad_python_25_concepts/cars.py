@@ -43,3 +43,49 @@ print(cars)
 print(car_info["year"])
 car_info["year"] = 2050
 print(car_info["year"])
+
+# snace case
+
+max_speed  =1000
+
+# constants (ALL CAPS)
+
+MAX_SPEED = 1200
+
+print(MAX_SPEED)
+print(max_speed)
+
+# Functions
+
+def start_cars():
+    print("Attempting to start toyota car..")
+    print("Attempting to start Honda car..")
+
+start_cars()
+
+# function call with parameter and arguments
+def start_cars1(car_1, car_2):
+    print(f"Attempting to start {car_1} car..")
+    print(f"Attempting to start {car_2} car..")
+
+start_cars1("Honda", "Tata")
+
+# default parameter
+def start_cars2(car_1 ="Tesla", car_2="BMW"):
+    print(f"Attempting to start {car_1} car..")
+    print(f"Attempting to start {car_2} car..")
+
+start_cars2()
+
+# function return
+
+def sum(a,b):
+    return a+b
+
+val_sum= sum(2,2)
+
+print(val_sum)
+
+# pass (this will not cause error)
+def new_fun():
+    pass
